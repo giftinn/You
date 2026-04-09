@@ -69,30 +69,6 @@ function updateCountdown(){
 setInterval(updateCountdown,1000);
 updateCountdown();
 
-function createHeart(){
-  const heart=document.createElement("div");
-  heart.classList.add("heart");
-
-  heart.innerHTML="❤";
-
-  heart.style.left=Math.random()*100+"vw";
-  heart.style.fontSize=(Math.random()*15+15)+"px";
-  heart.style.animationDuration=(Math.random()*4+4)+"s";
-
-  // random pink shade
-  const colors=["#ff6f91","#ff8fab","#ffb3c6","#ffc2d1","#ff5c8a"];
-  heart.style.color=colors[Math.floor(Math.random()*colors.length)];
-
-  document.body.appendChild(heart);
-
-  setTimeout(()=>{
-    heart.remove();
-  },8000);
-}
-
-/* Lebih rame */
-setInterval(createHeart,150);
-
 const letterContent = `
 I don’t even know where to start this, but please let me tell you how much I miss you.
 
