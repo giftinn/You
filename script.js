@@ -49,7 +49,7 @@ function goToPage(id){
   document.getElementById(id).classList.add("active");
 }
 
-const targetDate = new Date("2023-05-20T00:00:00").getTime(); 
+const targetDate = new Date("2025-10-09T00:00:00").getTime(); 
 
 function updateCountdown(){
   const now = new Date().getTime();
@@ -94,14 +94,14 @@ function createHeart(){
 setInterval(createHeart,150);
 
 const letterContent = `
-Aku tidak pernah menyesali hari itu.
+I don’t even know where to start this, but please let me tell you how much I miss you.
 
-Semua tawa, semua cerita, semua hal kecil yang mungkin sekarang hanya jadi kenangan.
+We should have been six months by now, right? It hurts knowing we can’t celebrate that together anymore. All I can do is hold onto the memories we made.
 
-Dan meskipun waktu berjalan, ada bagian dari diriku yang tetap diam di sana.
+Thank you for once being the best part of my days. Honestly, I can’t hold it in anymore — I miss you so much. Every day feels so quiet. There are no notifications from you anymore, even though they used to be the thing I looked forward to the most.
 
-Mengingatmu, bukan dengan luka,
-tapi dengan rasa yang lebih tenang.
+I know we probably can’t be together again. I understand that. But please let me express how much I miss you through this. Maybe you don’t like it, and maybe it makes things complicated… but at least I hope you can accept this small, simple gift from me.
+thank you for opened this gift, i still love you. 
 `;
 
 function formatLetter(text){
