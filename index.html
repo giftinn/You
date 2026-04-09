@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For You</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  
+<div class="page active" id="page1">
+  <div class="pin-display" id="pinDisplay">_ _ _ _</div>
+  <div class="message" id="statusText"></div>
+
+  <div class="keypad">
+    <button onclick="addNumber(1)">1</button>
+    <button onclick="addNumber(2)">2</button>
+    <button onclick="addNumber(3)">3</button>
+    <button onclick="addNumber(4)">4</button>
+    <button onclick="addNumber(5)">5</button>
+    <button onclick="addNumber(6)">6</button>
+    <button onclick="addNumber(7)">7</button>
+    <button onclick="addNumber(8)">8</button>
+    <button onclick="addNumber(9)">9</button>
+    <button onclick="deleteNumber()">Del</button>
+    <button onclick="addNumber(0)">0</button>
+    <button onclick="checkPin()">OK</button>
+  </div>
+</div>
+
+<!-- PAGE 2 (dummy dulu) -->
+<div class="page" id="page2">
+  <h1 class="count-title">Since That Day</h1>
+  <p class="count-subtitle">Time keeps moving, but some memories stay.</p>
+
+  <div class="countdown">
+    <div class="time-box">
+      <span id="days">0</span>
+      <small>Days</small>
+    </div>
+    <div class="time-box">
+      <span id="hours">0</span>
+      <small>Hours</small>
+    </div>
+    <div class="time-box">
+      <span id="minutes">0</span>
+      <small>Minutes</small>
+    </div>
+    <div class="time-box">
+      <span id="seconds">0</span>
+      <small>Seconds</small>
+    </div>
+  </div>
+
+  <button class="next-btn" onclick="goToPage('page3')">
+    Continue
+  </button>
+</div>
+
+<div class="page" id="page3">
+  <h1 class="gallery-title">Choose One</h1>
+
+  <div class="photo-buttons">
+    <button class="photo-btn" onclick="goToPage('page4')" 
+      style="background-image:url('foto1.jpg')">
+    </button>
+
+    <button class="photo-btn" onclick="goToPage('page5')" 
+      style="background-image:url('foto2.jpg')">
+    </button>
+
+  </div>
+
+  <button class="back-btn" onclick="goToPage('page1')">
+    Back to Start
+  </button>
+</div>
+
+<div class="page" id="page4">
+  <div class="letter-card">
+    <img src="foto-page4.jpg" class="letter-img">
+
+    <div class="letter-text" id="letterText"></div>
+
+    <button class="back-btn" onclick="goToPage('page3')">
+      Back
+    </button>
+  </div>
+</div>
+
+<div class="page" id="page5">
+  <h1 class="music-title">Songs that reminds me of You</h1>
+
+  <div class="music-list">
+
+    <!-- SONG 1 -->
+    <div class="music-item" data-audio="song1.mp3">
+      <img src="cover1.jpg" class="cover">
+      <div class="music-info">
+        <div class="song-title">Song Title 1</div>
+        <div class="song-artist">Artist Name 1</div>
+        <div class="progress-container">
+          <div class="progress-bar"></div>
+        </div>
+      </div>
+      <div class="duration">0:00</div>
+    </div>
+
+    <!-- SONG 2 -->
+    <div class="music-item" data-audio="song2.mp3">
+      <img src="cover2.jpg" class="cover">
+      <div class="music-info">
+        <div class="song-title">Song Title 2</div>
+        <div class="song-artist">Artist Name 2</div>
+        <div class="progress-container">
+          <div class="progress-bar"></div>
+        </div>
+      </div>
+      <div class="duration">0:00</div>
+    </div>
+
+    <!-- SONG 3 -->
+    <div class="music-item" data-audio="song3.mp3">
+      <img src="cover3.jpg" class="cover">
+      <div class="music-info">
+        <div class="song-title">Song Title 3</div>
+        <div class="song-artist">Artist Name 3</div>
+        <div class="progress-container">
+          <div class="progress-bar"></div>
+        </div>
+      </div>
+      <div class="duration">0:00</div>
+    </div>
+
+  </div>
+
+  <button class="back-btn" onclick="goToPage('page3')">
+    Back
+  </button>
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
